@@ -1,11 +1,19 @@
-const path = require('path');
+const parse = require("pg-connection-string").parse;
+const DATABASE_URL =
+  "postgres://localDbUser:localDbPassword@127.0.0.1:5422/personal-portfolio-cms";
+const config = parse(DATABASE_URL);
 
 module.exports = ({ env }) => ({
   connection: {
-    client: 'sqlite',
+    client: "postgres",
     connection: {
-      filename: path.join(__dirname, '..', env('DATABASE_FILENAME', '.tmp/data.db')),
+      host: config.host,
+      port: config.port,
+      database: config.database,
+      user: config.user,
+      password: config.password,
+      ssl: false,
     },
-    useNullAsDefault: true,
+    debug: false,
   },
 });

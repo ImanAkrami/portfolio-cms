@@ -1,0 +1,41 @@
+version: "3.7"
+services:
+
+  db:
+    container_name: pg_container
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=localDbUser
+      - POSTGRES_PASSWORD=localDbPassword
+      - POSTGRES_DB=personal-portfolio-cms
+    networks:
+      - vegarisnet
+    ports:
+      - '5422:5432'
+    volumes: 
+      - db:/var/lib/postgresql/data
+
+  pgadmin:
+    container_name: pgadmin4_container
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: vegaris@vegaris.com
+      PGADMIN_DEFAULT_PASSWORD: vegaris@vegaris.com
+      PGADMIN_SERVER_JSON_FILE: servers.json
+    networks:
+      - vegarisnet
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+      - ./servers.json:/pgadmin4/servers.json
+  
+volumes:
+  db:
+    driver: local
+  pgadmin-data:
+
+networks:
+  vegarisnet:
