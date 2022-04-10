@@ -20,6 +20,7 @@ services:
     container_name: pgadmin4_container
     image: dpage/pgadmin4
     restart: always
+
     environment:
       PGADMIN_DEFAULT_EMAIL: vegaris@vegaris.com
       PGADMIN_DEFAULT_PASSWORD: vegaris@vegaris.com

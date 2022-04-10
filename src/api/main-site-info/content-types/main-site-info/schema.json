@@ -1,0 +1,117 @@
+{
+  "kind": "singleType",
+  "collectionName": "main_site_infos",
+  "info": {
+    "singularName": "main-site-info",
+    "pluralName": "main-site-infos",
+    "displayName": "mainSiteInfo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "lastName": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "navButton": {
+      "displayName": "Sidebar Buttons",
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.sidebar-buttons",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "skill": {
+      "displayName": "skills",
+      "type": "component",
+      "repeatable": true,
+      "component": "experiences.skills",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "service": {
+      "displayName": "services",
+      "type": "component",
+      "repeatable": true,
+      "component": "experiences.services",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "feedBack": {
+      "displayName": "feedBack",
+      "type": "component",
+      "repeatable": false,
+      "component": "feedback.feed-back",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "workProcess": {
+      "displayName": "workProcess",
+      "type": "component",
+      "repeatable": true,
+      "component": "experiences.work-process",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "activity": {
+      "displayName": "Activities",
+      "type": "component",
+      "repeatable": true,
+      "component": "experiences.activities",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

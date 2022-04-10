@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_experiences_skills",
+  "info": {
+    "displayName": "skills",
+    "icon": "book-open",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "unique": false,
+      "minLength": 2
+    },
+    "skillDetailItem": {
+      "displayName": "skillDetail",
+      "type": "component",
+      "repeatable": true,
+      "component": "experiences.skill-detail"
+    }
+  }
+}

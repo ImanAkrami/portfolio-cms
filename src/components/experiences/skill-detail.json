@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_experiences_skill_details",
+  "info": {
+    "displayName": "skillDetail",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

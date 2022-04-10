@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_experiences_work_processes",
+  "info": {
+    "displayName": "workProcess",
+    "icon": "angle-double-right"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

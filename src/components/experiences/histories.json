@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_experiences_histories",
+  "info": {
+    "displayName": "Histories",
+    "icon": "code",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "subLabel": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "datePeriod": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

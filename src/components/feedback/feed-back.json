@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_feedback_feed_backs",
+  "info": {
+    "displayName": "feedBack",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "comment": {
+      "type": "component",
+      "repeatable": true,
+      "component": "feedback.comment"
+    }
+  }
+}
