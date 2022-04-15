@@ -32,17 +32,6 @@
         }
       }
     },
-    "navButton": {
-      "displayName": "Sidebar Buttons",
-      "type": "component",
-      "repeatable": true,
-      "component": "navigation.sidebar-buttons",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "avatar": {
       "type": "media",
       "multiple": true,
@@ -67,7 +56,7 @@
         }
       }
     },
-    "service": {
+    "services": {
       "displayName": "services",
       "type": "component",
       "repeatable": true,
@@ -107,6 +96,22 @@
       "type": "component",
       "repeatable": true,
       "component": "experiences.activities",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "homeMedia": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
       "pluginOptions": {
         "i18n": {
           "localized": true

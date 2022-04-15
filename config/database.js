@@ -3,7 +3,7 @@ const DATABASE_URL =
   "postgres://localDbUser:localDbPassword@127.0.0.1:5422/personal-portfolio-cms";
 const config = parse(DATABASE_URL);
 
-module.exports = ({ env }) => ({
+module.exports = () => ({
   connection: {
     client: "postgres",
     connection: {

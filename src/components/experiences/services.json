@@ -12,13 +12,11 @@
       "required": true,
       "unique": false
     },
-    "serviceIcon": {
+    "icon": {
       "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+      "multiple": true,
+      "required": true,
+      "allowedTypes": ["images"]
     },
     "description": {
       "type": "text",
