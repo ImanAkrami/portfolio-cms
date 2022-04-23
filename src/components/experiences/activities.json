@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "label": {
+    "title": {
       "type": "string",
       "required": true,
       "unique": false
@@ -20,7 +20,7 @@
         "images"
       ]
     },
-    "HistoryItem": {
+    "histories": {
       "displayName": "Histories",
       "type": "component",
       "repeatable": true,

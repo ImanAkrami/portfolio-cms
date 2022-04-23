@@ -2,15 +2,16 @@
   "collectionName": "components_feedback_feed_backs",
   "info": {
     "displayName": "feedBack",
-    "icon": "air-freshener"
+    "icon": "air-freshener",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "label": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "comment": {
+    "items": {
       "type": "component",
       "repeatable": true,
       "component": "feedback.comment"

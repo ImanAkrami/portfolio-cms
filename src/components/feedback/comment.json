@@ -2,11 +2,12 @@
   "collectionName": "components_feedback_comments",
   "info": {
     "displayName": "comment",
-    "icon": "rss"
+    "icon": "rss",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "label": {
+    "title": {
       "type": "string",
       "required": true
     },
@@ -19,12 +20,12 @@
       "required": true
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

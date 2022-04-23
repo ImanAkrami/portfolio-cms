@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "label": {
+    "title": {
       "type": "string",
       "required": true,
       "unique": false
@@ -21,7 +21,7 @@
       "type": "text",
       "required": true
     },
-    "datePeriod": {
+    "date": {
       "type": "string",
       "required": false
     }
