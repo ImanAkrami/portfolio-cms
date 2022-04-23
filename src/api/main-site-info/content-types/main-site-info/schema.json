@@ -68,7 +68,7 @@
         }
       }
     },
-    "feedBack": {
+    "comments": {
       "displayName": "feedBack",
       "type": "component",
       "repeatable": false,
@@ -80,7 +80,7 @@
         }
       }
     },
-    "workProcess": {
+    "workProcesses": {
       "displayName": "workProcess",
       "type": "component",
       "repeatable": true,
@@ -117,6 +117,17 @@
           "localized": true
         }
       }
+    },
+    "text": {
+      "displayName": "text",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "experiences.text"
     }
   }
 }

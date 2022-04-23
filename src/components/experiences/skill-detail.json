@@ -2,11 +2,12 @@
   "collectionName": "components_experiences_skill_details",
   "info": {
     "displayName": "skillDetail",
-    "icon": "align-center"
+    "icon": "align-center",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "label": {
+    "title": {
       "type": "string",
       "required": true
     },

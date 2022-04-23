@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "label": {
+    "title": {
       "type": "string",
       "required": true,
       "unique": false,
